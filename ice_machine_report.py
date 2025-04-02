@@ -9,6 +9,9 @@ import numpy as np
 # Initialize Dash app with external stylesheet
 app = dash.Dash(__name__, assets_folder='assets', external_stylesheets=['assets/style.css?v=1.0'], suppress_callback_exceptions=True)
 
+# Explicitly define server for gunicorn
+server = app.server
+
 # Load data
 assets = pd.read_csv('assets.csv')
 service_work_orders = pd.read_csv('work_orders.csv')
