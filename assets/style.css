@@ -1,0 +1,109 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: #E0E0E0;
+    background-color: #1E1E1E;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: linear-gradient(to right, #1E1E1E, #333333);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+.header-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+}
+
+.toggle-tabs {
+    display: inline-flex !important;
+    background-color: #2A2A2A !important;
+    border-radius: 25px !important;
+    padding: 3px !important;
+}
+
+.toggle-tabs .tab {
+    padding: 6px 18px !important;
+    border-radius: 20px !important;
+    margin: 0 !important;
+    background-color: #2A2A2A !important;
+    color: #E0E0E0 !important;
+    border: none !important;
+    font-size: 15px !important;
+    transition: background-color 0.3s ease, color 0.3s ease !important;
+}
+
+.toggle-tabs .tab--selected {
+    background-color: #555555 !important;
+    color: #FFFFFF !important;
+}
+
+.toggle-tabs .tab:hover {
+    background-color: #444444 !important;
+}
+
+.logo {
+    height: 50px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.tab {
+    background-color: #333333;
+    color: #666666;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.tab:hover {
+    background-color: #444444;
+    transform: scale(1.05);
+}
+
+.tab--selected {
+    background-color: #555555;
+    color: #FFFFFF;
+}
+
+.content {
+    background-color: #222222;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.graph {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown, .input {
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    background-color: #404040;
+    color: #E0E0E0;
+    transition: background-color 0.3s;
+}
+
+.dropdown:hover, .input:hover {
+    background-color: #505050;
+}
+
+#category-dropdown .Select-value-label {
+    color: #CCCCCC !important;
+}
